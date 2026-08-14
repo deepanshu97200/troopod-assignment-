@@ -1,0 +1,66 @@
+/* assets/pln-global.css */
+.pln-scope {
+  --pln-ink: #17102b;
+  --pln-deep: #241a3d;
+  --pln-brand: #4b3a8f;
+  --pln-brand-lt: #6b55b8;
+  --pln-paper: #ece6f7;
+  --pln-paper-2: rgba(236,230,247,.74);
+  --pln-paper-3: rgba(236,230,247,.52);
+  --pln-accent: #f0a03c;
+  --pln-accent-2: #c9761d;
+  --pln-surface: #faf7fd;
+  --pln-g-bg: linear-gradient(158deg,rgba(236,230,247,.15),rgba(75,58,143,.20) 58%,rgba(23,16,43,.28));
+  --pln-g-line: rgba(236,230,247,.22);
+  --pln-g-shadow: 0 26px 74px rgba(18,12,34,.44);
+  --pln-g-inset: inset 0 1px 0 rgba(255,255,255,.24);
+  --pln-r: 26px;
+  --pln-maxw: 1180px;
+  --pln-sec-y: 34px;
+  --pln-ease: cubic-bezier(.2,.7,.2,1);
+}
+
+/* Typography */
+.pln-scope .pln-d1, 
+.pln-scope .pln-d2, 
+.pln-scope .pln-d3 { 
+  font-family: 'Outfit', system-ui, sans-serif; text-transform: uppercase; letter-spacing: -.018em; font-weight: 800; color: var(--pln-surface); 
+}
+.pln-scope .pln-d1 { font-size: clamp(48px,8.6vw,112px); line-height: .87; }
+.pln-scope .pln-d2 { font-size: clamp(30px,4.6vw,54px); line-height: .94; }
+.pln-scope .pln-lede { font-size: clamp(15px,1.35vw,17.5px); color: var(--pln-paper-2); max-width: 44ch; }
+.pln-scope .pln-kicker { font-size: 11px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--pln-paper-3); }
+
+/* Glassmorphism */
+.pln-scope .pln-glass {
+  background: var(--pln-g-bg);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  border: 1px solid var(--pln-g-line);
+  border-radius: var(--pln-r);
+  box-shadow: var(--pln-g-shadow), var(--pln-g-inset);
+  position: relative;
+  overflow: hidden;
+}
+.pln-scope .pln-glass::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(115deg, rgba(255,255,255,.16), transparent 30%, transparent 72%, rgba(240,160,60,.07));
+}
+
+/* Buttons */
+.pln-scope .pln-btn {
+  display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 22px; border-radius: 999px;
+  font-size: 12.5px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; transition: .35s var(--pln-ease); cursor: pointer; text-decoration: none; font-family: 'Inter', sans-serif;
+}
+.pln-scope .pln-btn-primary {
+  background: linear-gradient(135deg, var(--pln-accent-2), #5d8d1c); color: #08211a;
+  box-shadow: 0 12px 30px rgba(201,118,29,.34), inset 0 1px 0 rgba(255,255,255,.34);
+}
+.pln-scope .pln-btn-primary:hover {
+  transform: translateY(-2px); box-shadow: 0 18px 40px rgba(201,118,29,.44), inset 0 1px 0 rgba(255,255,255,.4);
+}
+.pln-scope .pln-btn-ghost {
+  background: rgba(236,230,247,.10); border: 1px solid rgba(236,230,247,.30);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: var(--pln-surface);
+}
+.pln-scope .pln-btn-ghost:hover { background: rgba(236,230,247,.18); transform: translateY(-2px); }

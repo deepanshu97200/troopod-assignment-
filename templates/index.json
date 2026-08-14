@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "purelane_hero": {
+      "type": "purelane-hero",
+      "settings": {}
+    },
+    "purelane_reviews": {
+      "type": "purelane-reviews",
+      "settings": {}
+    },
+    "purelane_ingredients": {
+      "type": "purelane-ingredients",
+      "settings": {}
+    },
+    "purelane_pillars": {
+      "type": "purelane-pillars",
+      "settings": {}
+    },
+    "purelane_proof": {
+      "type": "purelane-proof",
+      "settings": {}
+    },
+    "purelane_combos": {
+      "type": "purelane-combos",
+      "settings": {}
+    },
+    "purelane_bundles": {
+      "type": "purelane-bundles",
+      "settings": {}
+    },
+    "purelane_shop": {
+      "type": "purelane-shop",
+      "settings": {}
+    },
+    "purelane_range": {
+      "type": "purelane-range",
+      "settings": {}
+    },
+    "purelane_whybundles": {
+      "type": "purelane-whybundles",
+      "settings": {}
+    },
+    "purelane_categories": {
+      "type": "purelane-categories",
+      "settings": {}
+    },
+    "purelane_trust": {
+      "type": "purelane-trust",
+      "settings": {}
+    },
+    "purelane_signup": {
+      "type": "purelane-signup",
+      "settings": {}
+    }
+  },
+  "order": [
+    "purelane_hero",
+    "purelane_reviews",
+    "purelane_ingredients",
+    "purelane_pillars",
+    "purelane_proof",
+    "purelane_combos",
+    "purelane_bundles",
+    "purelane_shop",
+    "purelane_range",
+    "purelane_whybundles",
+    "purelane_categories",
+    "purelane_trust",
+    "purelane_signup"
+  ]
+}
