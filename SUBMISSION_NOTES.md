@@ -6,13 +6,14 @@
 
 - **Target Theme**: Stock Dawn Theme (Shopify)
 - **Architecture**: 13 Production-Ready Merchant-Editable Liquid Sections
+- **Live Dev Store URL**: `https://purelane-dev-dwkavtxz.myshopify.com`
 - **Live Local Preview**: `http://127.0.0.1:9292/` (via `shopify theme dev`)
 
 ---
 
 ## 2. Metafield & Metaobject Definitions (Deliverable 3)
 
-To ensure the marketing team can manage custom product data dynamically through the Shopify Admin without touching code, the following Metafield definitions are configured:
+To ensure the marketing team can manage custom product data dynamically through the Shopify Admin without touching code, the following Metafield definitions are configured. For full detailed specifications, setup steps, and GraphQL import schema, see [METAFIELDS.md](file:///c:/Users/user/Desktop/shopify-theme/METAFIELDS.md).
 
 ### Product Metafields (`product.metafields.purelane.*`)
 1. `purelane.subtitle` (Single line text)
